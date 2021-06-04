@@ -5,8 +5,18 @@
 //svg-icons
 $items:
   facebook,
+  vk,
+  inst,
+  h,
   twitter,
-  percent_icon
+  percent_icon,
+  menu,
+  search,
+  basket,
+  favorite,
+  filters,
+  user,
+  download,
 ;
 
 .sprite-bg {
@@ -49,3 +59,5 @@ $items:
   background: $base-color-main;
 }
 //select
+
+@import '../../../../node_modules/swiper/swiper.scss';

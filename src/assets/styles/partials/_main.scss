@@ -10,12 +10,37 @@
 
 //
 // Main container
-//
+
 .main {
-  min-height: calc(100vh - 128px); // min-height depends on header && footer
-  .container {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+  position: relative;
+  min-height: 100vh;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background: $black;
+
+  &__wrap {
+    transform: translate(0px, 0px) scale(1);
+
+    @include transition;
+    border-color: $green-lighten;
+    border-width: 0px;
+    // will-change: transform;
+    overflow: hidden;
+
+    &.is-scaled {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: auto;
+
+      width: 100vw;
+      height: 232.5581395348837vh;
+
+      border-width: 93px;
+      border-style: solid;
+    }
   }
 }
 

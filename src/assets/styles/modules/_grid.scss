@@ -4,7 +4,9 @@
 
 // Container widths
 .container {
-  @include container;
+  // @include container;
+  position: relative;
+  padding: 0 40px;
 }
 
 // Row

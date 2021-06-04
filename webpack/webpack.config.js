@@ -103,6 +103,7 @@ module.exports = env => {
 								data: {
 									menu: require('../src/views/data/menu.json'),
 									index: require('../src/views/data/index.json'),
+									conditions: require('../src/views/data/conditions.json'),
 								}
 							}
 						}
@@ -223,17 +224,21 @@ module.exports = env => {
 				preserve_newlines: true
 			}),
 
-			new webpack.ProvidePlugin({
-				$: 'jquery',
-				jQuery: 'jquery',
-				'window.$': 'jquery',
-				'window.jQuery': 'jquery'
-			}),
+			// new webpack.ProvidePlugin({
+			// 	$: 'jquery',
+			// 	jQuery: 'jquery',
+			// 	'window.$': 'jquery',
+			// 	'window.jQuery': 'jquery'
+			// }),
 
 			new WebpackNotifierPlugin({
 				title: 'Noob__ui',
 				contentImage: path.join(__dirname, '../src/assets/images/logo.png'),
 			}),
-		]
+		],
+
+		stats: {
+			errorDetails: true
+		}
 	};
 };

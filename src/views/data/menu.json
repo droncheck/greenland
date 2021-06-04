@@ -1,26 +1,14 @@
 [
   {
-    "title": "Index",
-    "href": "/",
-    "subitems": false
+    "title": "каталог продукции",
+    "caption": "Прямые поставки из Европы"
   },
   {
-    "title": "Catalog",
-    "href": "#",
-    "subitems": {
-      "Catalog item 1": {
-        "title": "Catalog item 1",
-        "href": "#"
-      },
-      "Catalog item 2": {
-        "title": "Catalog item 2",
-        "href": "#"
-      }
-    }
+    "title": "работа с нами",
+    "caption": "Предлагаем особые условия"
   },
   {
-    "title": "About",
-    "href": "#",
-    "subitems": false
+    "title": "Услуги по озеленению",
+    "caption": "Эксперты в дизайнерском озеленении"
   }
 ]

@@ -299,3 +299,14 @@
 @mixin animation($str) {
   @include css3-prefix('animation', $str);
 }
+
+// fonts
+@mixin font($fname, $fstyle, $fweight, $furl) {
+  @font-face {
+    font-family: $fname;
+    font-style: $fstyle;
+    font-weight: $fweight;
+    font-display: swap;
+    src: url('#{$furl}.woff') format('woff'), url('#{$furl}.woff2') format('woff2');
+  }
+}

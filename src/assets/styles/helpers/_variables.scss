@@ -3,11 +3,11 @@
 
 
 //- Variables -> Base
-$base-font-family:                    "Roboto", Arial, sans-serif !default;
-$base-font-family-serif:              "Times New Roman", serif !default;
+$base-font-family:                    "SuisseIntl", Arial, sans-serif !default;
+$base-font-family-serif:              "TTRamillas", serif !default;
 $base-font-size:                      16px !default;
-$base-font-weight:                    300 !default;
-$base-line-height:                    1.471 !default;
+$base-font-weight:                    400 !default;
+$base-line-height:                    1.6 !default;
 $base-color:                          $black !default;
 $base-background:                     $white-lighten !default;
 $base-padding:                        8px;
@@ -19,24 +19,25 @@ $link-decoration:                     none;
 
 
 //- Variables -> Typography
-$font-size-large:                     ceil(($base-font-size * 1.125)) !default; // ~18px
-$font-size-medium:                    ceil(($base-font-size * 1)) !default; // ~16px
-$font-size-small:                     ceil(($base-font-size * 0.875)) !default; // ~14px
-$font-size-tiny:                      ceil(($base-font-size * 0.76)) !default; // ~12px
+$font-size-large:                     ceil(($base-font-size * 0.875)) !default; // ~14px
+$font-size-medium:                    ceil(($base-font-size * 0.8125)) !default; // ~13px
+$font-size-small:                     ceil(($base-font-size * 0.75)) !default; // ~12px
+$font-size-tiny:                      ceil(($base-font-size * 0.6875)) !default; // ~11px
+$font-size-super-tiny:                ceil(($base-font-size * 0.625)) !default; // ~10px
 
-$font-size-h1:                        floor(($base-font-size * 2)); // ~32px
-$font-size-h2:                        floor(($base-font-size * 1.5)); // ~24px
-$font-size-h3:                        floor(($base-font-size * 1.25)); // ~20px
-$font-size-h4:                        ceil(($base-font-size * 1.125)); // ~18px
-$font-size-h5:                        ceil(($base-font-size * 1)); // ~16px
-$font-size-h6:                        ceil(($base-font-size * 0.875)); // ~14px
+$font-size-h1:                        floor(($base-font-size * 3.75)); // ~60px
+$font-size-h2:                        floor(($base-font-size * 3)); // ~48px
+$font-size-h3:                        floor(($base-font-size * 2.125)); // ~34px
+$font-size-h4:                        ceil(($base-font-size * 1.5625)); // ~25px
+$font-size-h5:                        ceil(($base-font-size * 1.25)); // ~20px
+$font-size-h6:                        ceil(($base-font-size * 1)); // ~14px
 
 $line-height-computed:                floor(($base-font-size * $base-line-height)); // ~22px
 $line-height-computed-half:           floor(($base-font-size * $base-line-height) / 2); // ~11px
 
 $headings-font-family:                inherit !default;
-$headings-font-weight:                500 !default;
-$headings-line-height:                1.3 !default;
+$headings-font-weight:                400 !default;
+$headings-line-height:                1.2 !default;
 $headings-color:                      inherit !default;
 
 
@@ -53,9 +54,9 @@ $screen-lg:                           992px;
 $screen-lg-min:                       $screen-lg;
 $screen-desktop:                      $screen-lg-min;
 
-$screen-xl:                          1200px;
-$screen-xl-min:                      $screen-xl;
-$screen-xl-desktop:                  $screen-xl-min;
+$screen-xl:                           1200px;
+$screen-xl-min:                       $screen-xl;
+$screen-xl-desktop:                   $screen-xl-min;
 
 $screen-xs-max:                       ($screen-sm-min - 1) !default;
 $screen-sm-max:                       ($screen-md-min - 1) !default;
@@ -65,9 +66,9 @@ $screen-lg-max:                       ($screen-xl-min - 1) !default;
 $screen-adaptive-nav:                 $screen-md-min;
 
 //- Number of columns in the grid system
-$grid-columns:                        12;
-$grid-gutter-width:                   30px;
-$grid-gutter-width-md:                30px;
+$grid-columns:                        16;
+$grid-gutter-width:                   20px;
+$grid-gutter-width-md:                20px;
 
 
 //- Small screen / tablet
@@ -89,7 +90,7 @@ $container-xl:                        $container-large-desktop;
 //- Btn
 $btn-font-weight:                     400;
 
-$btn-default-color:                   #8493a8 !default;
+$btn-default-color:                   $black !default;
 $btn-default-bg:                      #fff !default;
 $btn-default-border:                  #cad3df !default;
 

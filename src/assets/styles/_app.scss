@@ -1,4 +1,6 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300&subset=latin,cyrillic);
+// @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300&subset=latin,cyrillic);
+
+
 //@import 'normalize.css';
 
 //
@@ -102,3 +104,10 @@ $debug-mode:                   false!default;
 
 // Pages
 @import "pages/index";
+
+//Fonts
+@include font('SuisseIntl', normal, 300, '../fonts/SuisseIntl-Light');
+@include font('SuisseIntl', normal, 400, '../fonts/SuisseIntl-Regular');
+@include font('SuisseIntl', normal, 600, '../fonts/SuisseIntl-SemiBold');
+@include font('TTRamillas', italic, 400, '../fonts/TTRamillas-Italic');
+@include font('TTRamillas', italic, 700, '../fonts/TTRamillas-BoldItalic');

@@ -58,6 +58,7 @@ body {
 }
 
 section {
+  position: relative;
   background: $white-lighten;
 }
 
@@ -66,6 +67,7 @@ section {
 //
 a {
   color: $link-color;
+  text-decoration: none;
   @include transition;
 
   &:hover,
@@ -75,10 +77,20 @@ a {
   }
 }
 
+button {
+  padding: 0;
+  border: none;
+  background: none;
+  box-shadow: none;
+  font: inherit;
+  cursor: pointer;
+}
+
 //
 // Images
 //
-img {
+.img {
+  display: block;
   max-width: 100%;
   height: auto;
 }
@@ -99,6 +111,16 @@ img {
   margin-left:auto;
 }
 
+
+.header,
+.section,
+.footer {
+  padding-left: 80px;
+}
+
+.has-scroll-smooth body {
+  overflow: hidden;
+}
 
 
 //
